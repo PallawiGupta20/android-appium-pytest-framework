@@ -61,3 +61,14 @@ jobs:
             appium &
             sleep 10
             pytest -v
+
+## API Testing
+In addition to UI automation, this project includes API-level tests (`tests/api/`) 
+using Python's `requests` library, demonstrating request/response validation, 
+status code checks, and a reusable API client pattern — independent of the 
+mobile UI tests and runnable without an emulator.
+
+Run API tests only:
+```bash
+pytest tests/api/ -v
+```
